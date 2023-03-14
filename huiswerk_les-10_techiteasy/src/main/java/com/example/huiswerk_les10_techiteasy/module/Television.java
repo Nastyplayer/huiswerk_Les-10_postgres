@@ -14,10 +14,10 @@ import jakarta.persistence.Table;
 public class Television {
 
 
-   @Id
-  @GeneratedValue
+    @Id
+    @GeneratedValue
 
-    public Long id;
+    private Long id;
     public String type;
     public String brand;
 
@@ -38,6 +38,8 @@ public class Television {
 
     public int sold;
 
+    public static void add(Television television) {
+    }
 
     public static void set(long id, String television) {
     }
